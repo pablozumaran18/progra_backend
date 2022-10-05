@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    #agregar app
     "gatos"
 ]
 
@@ -55,6 +56,7 @@ ROOT_URLCONF = "veterinaria.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
+        #agregar dirs
         "DIRS": ["./"],
         "APP_DIRS": True,
         "OPTIONS": {

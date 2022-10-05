@@ -9,33 +9,38 @@
         }
     </style>
     <body>
-
         <table>
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Edad</th>
-                    <th>Raza</th>
-                    <th>Genero</th>
-                    <th>Color</th>
-                    <th>Peso</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- gato toma el valor de cada objeto que haya dentro del diccionario o lista -->
-                {%for gato in gatos %}
+                
+            <tr>
 
+                <td>Nombre</td>
+            
+                <td>Edad</td>
+            
+                <td>Raza</td>
+
+                <td>Genero</td>
+
+                <td>color</td>
+
+                <td>peso</td>
+            
+            </tr>
+            
+            {{ %for g in gato1% }}
                 <tr>
-                    <td>{{gato.nombre}}</td>
-                    <td>{{gato.edad}}</td>
-                    <td>{{gato.raza}}</td>
-                    <td>{{gato.genero}}</td>
-                    <td>{{gato.color}}</td>
-                    <td>{{gato.peso}}</td>
+                
+                
+                    <td>gato1.nombre</td>
+                
+                    <td>2 años</td>
+                
+                    <td>Abisinio</td>
+                
                 </tr>
-                {% endfor %}
-            </tbody>
+            {{ %endFor% }}
         </table>
 
+        {{gato1}}
     </body>
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celulares</title>
+</head>
+<body>
+    <h1>la lista de telefonos</h1>
+    <br>
+    
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>marca</th>
+                <th>modelo</th>
+                <th>año</th>
+                <th>fecha de adquisicion</th>
+            </tr>
+        
+        </thead>
+        
+        <tbody>
+            {% for c in celulares %}
+            <tr>
+                <td>{{ c.marca }}</td>
+                <td>{{ c.modelo }}</td>
+                <td>{{ c.año }}</td>
+                <td>{{ c.fecha }}</td>
+
+            {% endfor %}
+
+        
+
+        
+            
+            </tr>
+        </tbody>
+    </table>
+<br>
+
+<h1>tabla filtrada</h1>
+<table>
+    <thead>
+        <tr>
+            <th>marca</th>
+            <th>modelo</th>
+            <th>año</th>
+            <th>fecha de adquisicion</th>
+        </tr>
+    
+    </thead>
+    
+    <tbody>
+        {% for c in celulares %}
+
+            <!-- {% if c.año|add:"0" > filtro %} -->
+                <tr>
+                    <td>{{ c.marca }}</td>
+                    <td>{{ c.modelo }}</td>
+                    <td>{{ c.año }}</td>
+                    <td>{{ c.fecha }}</td>
+                
+            <!-- {% endif %} -->
+
+        {% endfor %}
+
+    
+
+    
+        
+        </tr>
+    </tbody>
+</table>
+ 
+</body>
+</html>
