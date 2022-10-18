@@ -6,4 +6,7 @@ from django.db import models
 
 class movie (models.Model) :
     name = models.CharField(max_length = 100)
-    comentario = models.TextField()
+    comentario = models.TextFiel
+
+class Director (models.Model):
+    
